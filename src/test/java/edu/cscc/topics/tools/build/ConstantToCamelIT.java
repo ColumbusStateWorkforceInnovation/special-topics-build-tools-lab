@@ -32,7 +32,7 @@ public class ConstantToCamelIT {
                 .withFollowStream(true)
                 .withTailAll();
 
-        StringBuilder stringBuilder = new StringBuilder();
+        final StringBuilder stringBuilder = new StringBuilder();
         logContainerCmd.exec(new LogContainerResultCallback() {
                 @Override
                 public void onNext(Frame item) {
@@ -63,7 +63,7 @@ public class ConstantToCamelIT {
                 .withFollowStream(true)
                 .withTailAll();
 
-        StringBuilder stringBuilder = new StringBuilder();
+        final StringBuilder stringBuilder = new StringBuilder();
         logContainerCmd.exec(new LogContainerResultCallback() {
             @Override
             public void onNext(Frame item) {
